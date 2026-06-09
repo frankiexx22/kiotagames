@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiota Games</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #111827;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #d1d5db;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .game-card {
+            background: #1f2937;
+            border-radius: 12px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            background: #374151;
+        }
+
+        .game-card h3 {
+            margin-bottom: 10px;
+            color: #60a5fa;
+        }
+
+        .about {
+            background: #1f2937;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .coming-soon {
+            background: #0f172a;
+        }
+
+        .coming-list {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0f172a;
+            color: #9ca3af;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kiota Games</h1>
+    <p>Independent Game Development Studio from Tanzania</p>
+
+    <a href="https://play.google.com/store/apps/dev?id=4754858484351836403" class="btn">
+        View Our Games
+    </a>
+</header>
+
+<section>
+    <h2>Published Games</h2>
+
+    <div class="games-grid">
+
+        <div class="game-card">
+            <h3>Galaxy Fury</h3>
+            <p>Fast-paced space combat and asteroid destruction action game.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>Last Card</h3>
+            <p>Strategic card gameplay that challenges planning and decision-making.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>Mind Marathon</h3>
+            <p>Brain-training challenges designed to improve memory and focus.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>Serengeti Circuit Masters</h3>
+            <p>Racing competition inspired by speed, skill and precision.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>Tacticians Deck</h3>
+            <p>Card-based strategy game focused on tactical thinking.</p>
+        </div>
+
+        <div class="game-card">
+            <h3>The Lone Chap</h3>
+            <p>Adventure experience featuring exploration and challenge.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>About Kiota Games</h2>
+
+    <div class="about">
+        <p>
+            Kiota Games is an independent game development studio based in Tanzania.
+            We create mobile games across multiple genres including action, strategy,
+            racing, puzzle, card and multiplayer experiences.
+        </p>
+
+        <br>
+
+        <p>
+            Our mission is to build fun, engaging games for players around the world
+            while showcasing African creativity and innovation through game development.
+        </p>
+    </div>
+</section>
+
+<section class="coming-soon">
+    <h2>Coming Soon</h2>
+
+    <div class="coming-list">
+        <p>Kivuli Ops (Multiplayer FPS)</p>
+        <p>Rogue Asteroids</p>
+        <p>Bongo Blast</p>
+        <p>WordZania</p>
+        <p>Gololi: Mbio za ZigZag</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Kiota Games. All Rights Reserved.</p>
+    <p>kiotagames.com</p>
+</footer>
+
+</body>
+</html>
