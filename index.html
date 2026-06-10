@@ -79,12 +79,28 @@ h2{
 
 .game-card{
     background:#1a2740;
-    padding:30px;
+    padding:25px;
     border-radius:15px;
     text-decoration:none;
     color:white;
     transition:.3s;
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
+
+.game-icon{
+    width:90px;
+    height:90px;
+    border-radius:20px;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.game-info{
+    flex:1;
+}
+
 
 .game-card:hover{
     transform:translateY(-8px);
@@ -156,6 +172,16 @@ footer a:hover{
         width:250px;
     }
 
+    .game-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .game-icon{
+        width:120px;
+        height:120px;
+    }
+
 }
 
 </style>
@@ -184,56 +210,85 @@ footer a:hover{
 
 <section id="games">
 
-    <h2>Published Games</h2>
+<h2>Published Games</h2>
 
-    <div class="games-grid">
+<div class="games-grid">
 
-        <a href="https://play.google.com/store/apps/details?id=com.KiotaGames.GalaxyFury"
-           target="_blank"
-           class="game-card">
-            <h3>Galaxy Fury</h3>
-            <p>Fast-paced space combat and asteroid destruction action game.</p>
-        </a>
+<a href="https://play.google.com/store/apps/details?id=com.KiotaGames.GalaxyFury"
+target="_blank" class="game-card">
 
-        <a href="https://play.google.com/store/apps/details?id=com.kiotagames.lastcard"
-           target="_blank"
-           class="game-card">
-            <h3>Last Card</h3>
-            <p>Strategic card gameplay that challenges planning and decision-making.</p>
-        </a>
+<img src="Galaxy Fury.png" alt="Galaxy Fury" class="game-icon">
 
-        <a href="https://play.google.com/store/apps/details?id=com.kiotagames.mindmarathon"
-           target="_blank"
-           class="game-card">
-            <h3>Mind Marathon</h3>
-            <p>Brain-training challenges designed to improve memory and focus.</p>
-        </a>
+<div class="game-info">
+<h3>Galaxy Fury</h3>
+<p>Fast-paced space combat and asteroid destruction action game.</p>
+</div>
 
-        <a href="https://play.google.com/store/apps/details?id=com.KiotaGames.SerengetiCircuitMasters"
-           target="_blank"
-           class="game-card">
-            <h3>Serengeti Circuit Masters</h3>
-            <p>Racing competition inspired by speed, skill and precision.</p>
-        </a>
+</a>
 
-        <a href="https://play.google.com/store/apps/details?id=com.kiotagames.tacticiansdeck"
-           target="_blank"
-           class="game-card">
-            <h3>Tacticians Deck</h3>
-            <p>Card-based strategy game focused on tactical thinking.</p>
-        </a>
+<a href="https://play.google.com/store/apps/details?id=com.kiotagames.lastcard"
+target="_blank" class="game-card">
 
-        <a href="https://play.google.com/store/apps/details?id=com.kiotagames.thelonechap"
-           target="_blank"
-           class="game-card">
-            <h3>The Lone Chap</h3>
-            <p>Adventure experience featuring exploration and challenge.</p>
-        </a>
+<img src="Last Card.png" alt="Last Card" class="game-icon">
 
-    </div>
+<div class="game-info">
+<h3>Last Card</h3>
+<p>Strategic card gameplay that challenges planning and decision-making.</p>
+</div>
+
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.kiotagames.mindmarathon"
+target="_blank" class="game-card">
+
+<img src="Mind Marathon.png" alt="Mind Marathon" class="game-icon">
+
+<div class="game-info">
+<h3>Mind Marathon</h3>
+<p>Brain-training challenges designed to improve memory and focus.</p>
+</div>
+
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.KiotaGames.SerengetiCircuitMasters"
+target="_blank" class="game-card">
+
+<img src="Serengeti.png" alt="Serengeti Circuit Masters" class="game-icon">
+
+<div class="game-info">
+<h3>Serengeti Circuit Masters</h3>
+<p>Racing competition inspired by speed, skill and precision.</p>
+</div>
+
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.kiotagames.tacticiansdeck"
+target="_blank" class="game-card">
+
+<img src="Tacticians Deck.png" alt="Tacticians Deck" class="game-icon">
+
+<div class="game-info">
+<h3>Tacticians Deck</h3>
+<p>Card-based strategy game focused on tactical thinking.</p>
+</div>
+
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.kiotagames.thelonechap"
+target="_blank" class="game-card">
+
+<img src="The Lone Chap.png" alt="The Lone Chap" class="game-icon">
+
+<div class="game-info">
+<h3>The Lone Chap</h3>
+<p>Adventure experience featuring exploration and challenge.</p>
+</div>
+
+</a>
+
+</div>
 
 </section>
-
 <section class="about">
 
     <h2>About Kiota Games</h2>
