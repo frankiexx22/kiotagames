@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -92,7 +93,7 @@ body {
     margin-top: 35px;
 }
 
-/* Book button — matches index.html */
+/* Book button — original size, card navy color */
 .book-button-container {
     text-align: center;
     margin-top: 25px;
@@ -101,29 +102,32 @@ body {
 .book-button {
     display: inline-block;
     max-width: 100%;
-    padding: 16px 35px;
-    background: #3d7cff;
+    padding: 16px 28px;
+    background: #1a2740;
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 1.1rem;
     line-height: 1.5;
+    border: 1px solid rgba(102, 163, 255, .15);
     box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
-    transition: .3s;
+    transition: background .3s, transform .3s;
 }
 
 .book-button:hover {
-    background: #5d93ff;
+    background: #233653;
+    transform: translateY(-3px);
 }
 
 .book-button strong {
     display: block;
+    color: #66a3ff;
     font-size: 1.15rem;
 }
 
 .book-button span {
     display: block;
     font-size: .95rem;
+    color: white;
 }
 
 /* Footer */
@@ -178,15 +182,17 @@ footer a:hover {
     .book-button {
         width: 100%;
         max-width: 360px;
-        padding: 16px 35px;
+        padding: 16px 18px;
     }
 
     .book-button strong {
         font-size: 1.1rem;
     }
+
 }
 
 </style>
+
 </head>
 
 <body>
