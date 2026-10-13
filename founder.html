@@ -3,258 +3,275 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Founder | Kiota Games</title>
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background:#050d22;
-    color:white;
+html {
+    scroll-behavior: smooth;
 }
 
-.hero{
-    background:linear-gradient(135deg,#08152f,#233f8d);
-    text-align:center;
-    padding:80px 20px;
+body {
+    background: #050d22;
+    color: white;
 }
 
-.hero h1{
-    font-size:4rem;
-    margin-bottom:15px;
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #08152f, #233f8d);
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.hero p{
-    font-size:1.4rem;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
 }
 
-.founder-section{
-    padding:80px 10%;
+.hero p {
+    font-size: 1.4rem;
 }
 
-.founder-box{
-    max-width:900px;
-    margin:auto;
-    background:#1a2740;
-    padding:50px;
-    border-radius:15px;
-    line-height:1.9;
-    font-size:1.2rem;
+/* Founder section */
+.founder-section {
+    padding: 80px 10%;
 }
 
-.founder-box h2{
-    text-align:center;
-    color:#66a3ff;
-    font-size:2.7rem;
-    margin-bottom:40px;
+.founder-box {
+    max-width: 900px;
+    margin: auto;
+    background: #1a2740;
+    padding: 50px;
+    border-radius: 15px;
+    line-height: 1.9;
+    font-size: 1.2rem;
 }
 
-.founder-box p{
-    margin-bottom:25px;
+.founder-box h2 {
+    text-align: center;
+    color: #66a3ff;
+    font-size: 2.7rem;
+    margin-bottom: 40px;
 }
 
-.founder-video{
-    text-align:center;
-    margin:45px 0;
+.founder-box p {
+    margin-bottom: 25px;
 }
 
-.founder-video video{
-    width:45%;
-    max-width:420px;
-    height:auto;
-    border-radius:15px;
-    display:inline-block;
-    box-shadow:0 10px 30px rgba(0,0,0,.45);
+/* Founder video */
+.founder-video {
+    text-align: center;
+    margin: 45px 0;
 }
 
-.closing{
-    font-size:1.35rem;
-    font-weight:bold;
-    text-align:center;
-    color:#66a3ff;
-    margin-top:35px;
+.founder-video video {
+    width: 45%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
 }
 
-/* Book button */
-.book-button-container{
-    text-align:center;
-    margin-top:25px;
+/* Closing statement */
+.closing {
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-align: center;
+    color: #66a3ff;
+    margin-top: 35px;
 }
 
-.book-button{
-    display:inline-block;
-    max-width:100%;
-    padding:16px 28px;
-    background:#3d7cff;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    line-height:1.5;
-    box-shadow:0 8px 20px rgba(0,0,0,.3);
-    transition:background .3s, transform .3s;
+/* Book button — matches index.html */
+.book-button-container {
+    text-align: center;
+    margin-top: 25px;
 }
 
-.book-button:hover{
-    background:#5d93ff;
-    transform:translateY(-3px);
+.book-button {
+    display: inline-block;
+    max-width: 100%;
+    padding: 16px 35px;
+    background: #3d7cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
+    transition: .3s;
 }
 
-.book-button strong{
-    display:block;
-    font-size:1.15rem;
+.book-button:hover {
+    background: #5d93ff;
 }
 
-.book-button span{
-    display:block;
-    font-size:.95rem;
+.book-button strong {
+    display: block;
+    font-size: 1.15rem;
 }
 
-footer{
-    text-align:center;
-    padding:40px 20px;
-    background:#030814;
+.book-button span {
+    display: block;
+    font-size: .95rem;
 }
 
-footer a{
-    color:#66a3ff;
-    text-decoration:none;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #030814;
 }
 
-footer a:hover{
-    text-decoration:underline;
+footer a {
+    color: #66a3ff;
+    text-decoration: none;
 }
 
-@media (max-width:768px){
-
-.hero{
-    padding:60px 20px;
+footer a:hover {
+    text-decoration: underline;
 }
 
-.hero h1{
-    font-size:3rem;
-}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
 
-.founder-section{
-    padding:50px 20px;
-}
+    .hero {
+        padding: 60px 20px;
+    }
 
-.founder-box{
-    padding:30px 25px;
-    font-size:1.1rem;
-}
+    .hero h1 {
+        font-size: 3rem;
+    }
 
-.founder-box h2{
-    font-size:2.2rem;
-}
+    .hero p {
+        font-size: 1.2rem;
+    }
 
-.founder-video video{
-    width:100%;
-    max-width:100%;
-}
+    .founder-section {
+        padding: 50px 20px;
+    }
 
-.book-button{
-    width:100%;
-    max-width:360px;
-    padding:16px 18px;
-}
+    .founder-box {
+        padding: 30px 25px;
+        font-size: 1.1rem;
+    }
 
-.book-button strong{
-    font-size:1.1rem;
-}
+    .founder-box h2 {
+        font-size: 2.2rem;
+    }
 
+    .founder-video video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .book-button {
+        width: 100%;
+        max-width: 360px;
+        padding: 16px 35px;
+    }
+
+    .book-button strong {
+        font-size: 1.1rem;
+    }
 }
 
 </style>
-
 </head>
 
 <body>
 
 <section class="hero">
 
-<h1>Founder</h1>
+    <h1>Founder</h1>
 
-<p>Franklin Josue Rutayungulwa</p>
+    <p>Franklin Josue Rutayungulwa</p>
 
 </section>
 
 <section class="founder-section">
 
-<div class="founder-box">
+    <div class="founder-box">
 
-<h2>Founder’s Vision</h2>
+        <h2>Founder's Vision</h2>
 
-<p>
-I built Kiota Games from the belief that where you begin should never determine how far you can go.
-</p>
+        <p>
+            I built Kiota Games from the belief that where you begin
+            should never determine how far you can go.
+        </p>
 
-<p>
-I started alone, with limited resources, learning, building, failing, rebuilding, and eventually publishing games from Tanzania for players around the world. But my vision has never been to remain a solo developer.
-</p>
+        <p>
+            I started alone, with limited resources, learning, building,
+            failing, rebuilding, and eventually publishing games from
+            Tanzania for players around the world. But my vision has
+            never been to remain a solo developer.
+        </p>
 
-<p>
-It is to build a studio where programmers and artists have the freedom to think, create, and turn their ideas into games that feel alive. A place where imagination is taken seriously, where people grow by building, and where good ideas are given the chance to become real.
-</p>
+        <p>
+            It is to build a studio where programmers and artists have
+            the freedom to think, create, and turn their ideas into games
+            that feel alive. A place where imagination is taken seriously,
+            where people grow by building, and where good ideas are given
+            the chance to become real.
+        </p>
 
-<div class="founder-video">
+        <div class="founder-video">
 
-<video controls>
-    <source src="VID-20260726-WA0002.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+            <video controls>
+                <source src="VID-20260726-WA0002.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-</div>
+        </div>
 
-<p class="closing">
-Kiota Games &mdash; Where Code Becomes Reality.
-</p>
+        <p class="closing">
+            Kiota Games &mdash; Where Code Becomes Reality.
+        </p>
 
-<div class="book-button-container">
+        <div class="book-button-container">
 
-<a
-    href="https://www.amazon.com/dp/B0H4RL7MNG"
-    class="book-button"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    <strong>A Life Behind the Code</strong>
-    <span>The Journey Didn't Begin with Games</span>
-</a>
+            <a
+                href="https://www.amazon.com/dp/B0H4RL7MNG"
+                class="book-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <strong>A Life Behind the Code</strong>
+                <span>The Journey Didn't Begin with Games</span>
+            </a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
 <footer>
 
-<br>
+    <br>
 
-<p>
-<a href="index.html">Home</a> |
-<a href="privacy-policy.html">Privacy Policy</a> |
-<a href="contact.html">Contact Us</a>
-</p>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+    </p>
 
-<br>
+    <br>
 
-<p>© 2026 Kiota Games. All Rights Reserved.</p>
+    <p>© 2026 Kiota Games. All Rights Reserved.</p>
 
 </footer>
 
 </body>
-
 </html>
 ```
