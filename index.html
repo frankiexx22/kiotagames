@@ -1,186 +1,210 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kiota Games | Independent Game Studio</title>
+<title>Founder | Kiota Games</title>
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    background:#050d22;
-    color:white;
+body {
+    background: #050d22;
+    color: white;
+    line-height: 1.8;
 }
 
-.hero{
-    background:linear-gradient(135deg,#08152f,#233f8d);
-    text-align:center;
-    padding:80px 20px;
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(135deg, #08152f, #233f8d);
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.logo{
-    width:220px;
-    max-width:80%;
-    margin-bottom:25px;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
 }
 
-.hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
+.hero p {
+    font-size: 1.4rem;
 }
 
-.hero p{
-    font-size:1.6rem;
-    margin-bottom:35px;
+/* FOUNDER SECTION */
+
+.founder-section {
+    padding: 80px 10%;
 }
 
-.btn{
-    display:inline-block;
-    background:#3d7cff;
-    color:white;
-    text-decoration:none;
-    padding:16px 35px;
-    border-radius:10px;
-    font-size:1.1rem;
-    transition:.3s;
+.founder-box {
+    max-width: 900px;
+    margin: auto;
+    background: #1a2740;
+    padding: 50px;
+    border-radius: 15px;
+    line-height: 1.9;
+    font-size: 1.2rem;
 }
 
-.btn:hover{
-    background:#5d93ff;
+.founder-box h2 {
+    text-align: center;
+    color: #66a3ff;
+    font-size: 2.7rem;
+    margin-bottom: 40px;
 }
 
-section{
-    padding:80px 10%;
+.founder-box p {
+    margin-bottom: 25px;
 }
 
-h2{
-    text-align:center;
-    font-size:3rem;
-    margin-bottom:50px;
+/* FOUNDER VIDEO */
+
+.founder-video {
+    text-align: center;
+    margin: 45px 0;
 }
 
-.games-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
+.founder-video video {
+    width: 45%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
-.game-card{
-    background:#1a2740;
-    padding:25px;
-    border-radius:15px;
-    text-decoration:none;
-    color:white;
-    transition:.3s;
-    display:flex;
-    align-items:center;
-    gap:20px;
+/* CLOSING MESSAGE */
+
+.closing {
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-align: center;
+    color: #66a3ff;
+    margin-top: 35px;
+    margin-bottom: 0;
 }
 
-.game-icon{
-    width:90px;
-    height:90px;
-    border-radius:20px;
-    object-fit:cover;
-    flex-shrink:0;
+/* BOOK BUTTON */
+
+.book-button-container {
+    text-align: center;
+    margin: 30px 0 10px;
+    padding: 0 15px;
 }
 
-.game-info{
-    flex:1;
+.book-button {
+    display: inline-block;
+    max-width: 100%;
+    padding: 16px 24px;
+    background: #3d7cff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    line-height: 1.7;
+    border-radius: 10px;
+    border: 2px solid #3d7cff;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.game-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(0,0,0,.4);
+.book-button:hover {
+    background: #5d93ff;
+    border-color: #5d93ff;
+    transform: translateY(-3px);
 }
 
-.game-card h3{
-    color:#66a3ff;
-    margin-bottom:15px;
-    font-size:1.8rem;
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #030814;
 }
 
-.game-card p{
-    line-height:1.7;
+footer a {
+    color: #66a3ff;
+    text-decoration: none;
 }
 
-.about{
-    background:#08152f;
+footer a:hover {
+    text-decoration: underline;
 }
 
-.about-box{
-    background:#1a2740;
-    padding:40px;
-    border-radius:15px;
-    text-align:center;
-    line-height:1.8;
-    font-size:1.2rem;
+footer p {
+    margin: 10px 0;
 }
 
-.coming-soon{
-    text-align:center;
-}
+/* MOBILE RESPONSIVENESS */
 
-.coming-soon p{
-    font-size:1.6rem;
-    margin:12px 0;
-}
+@media (max-width: 768px) {
 
-footer{
-    text-align:center;
-    padding:40px;
-    background:#030814;
-}
+    .hero {
+        padding: 60px 20px;
+    }
 
-footer a{
-    color:#66a3ff;
-    text-decoration:none;
-}
+    .hero h1 {
+        font-size: 3rem;
+    }
 
-footer a:hover{
-    text-decoration:underline;
-}
+    .hero p {
+        font-size: 1.15rem;
+    }
 
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:20px;
-}
+    .founder-section {
+        padding: 50px 20px;
+    }
 
-@media (max-width:768px){
+    .founder-box {
+        padding: 30px 25px;
+        font-size: 1.1rem;
+    }
 
-.hero-buttons{
-    flex-direction:column;
-    align-items:center;
-}
+    .founder-box h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
 
-.hero-buttons .btn{
-    width:250px;
-}
+    .founder-video video {
+        width: 100%;
+        max-width: 100%;
+    }
 
-.game-card{
-    flex-direction:column;
-    text-align:center;
-}
+    .closing {
+        font-size: 1.15rem;
+    }
 
-.game-icon{
-    width:120px;
-    height:120px;
-}
+    .book-button-container {
+        margin-top: 25px;
+    }
+
+    .book-button {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 14px 12px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 30px 15px;
+        font-size: 0.95rem;
+    }
 
 }
 
@@ -190,274 +214,104 @@ footer a:hover{
 
 <body>
 
+<!-- HERO SECTION -->
+
 <section class="hero">
 
-<img src="KiotaLogo.jpg" alt="Kiota Games Logo" class="logo">
+    <h1>Founder</h1>
 
-<h1>Kiota Games</h1>
-
-<p>Independent Game Development Studio from Tanzania</p>
-
-<div class="hero-buttons">
-
-<a href="#games" class="btn">View Our Games</a>
-
-<a href="privacy-policy.html" class="btn">Privacy Policy</a>
-
-<a href="contact.html" class="btn">Contact Us</a>
-
-<a href="founder.html" class="btn">Founder</a>
-
-</div>
+    <p>Franklin Josue Rutayungulwa</p>
 
 </section>
 
-<section id="games">
+<!-- FOUNDER VISION -->
 
-<h2>Published Games</h2>
+<section class="founder-section">
 
-<div class="games-grid">
+    <div class="founder-box">
 
-<a href="https://play.google.com/store/apps/details?id=com.KiotaGames.GalaxyFury" target="_blank" class="game-card">
+        <h2>Founder’s Vision</h2>
 
-<img src="Galaxy-Fury.png" alt="Galaxy Fury" class="game-icon">
+        <p>
+            I built Kiota Games from the belief that where you begin
+            should never determine how far you can go.
+        </p>
 
-<div class="game-info">
-<h3>Galaxy Fury</h3>
-<p>Fast-paced space combat and ship destruction action game.</p>
-</div>
+        <p>
+            I started alone, with limited resources, learning, building,
+            failing, rebuilding, and eventually publishing games from
+            Tanzania for players around the world. But my vision has
+            never been to remain a solo developer.
+        </p>
 
-</a>
+        <p>
+            It is to build a studio where programmers and artists have
+            the freedom to think, create, and turn their ideas into games
+            that feel alive. A place where imagination is taken seriously,
+            where people grow by building, and where good ideas are given
+            the chance to become real.
+        </p>
 
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.lastcard" target="_blank" class="game-card">
+        <!-- FOUNDER VIDEO -->
 
-<img src="LastCardNewIcon.png" alt="Last Card" class="game-icon">
+        <div class="founder-video">
 
-<div class="game-info">
-<h3>Last Card</h3>
-<p>Strategic card gameplay that challenges planning and decision-making.</p>
-</div>
+            <video controls playsinline preload="metadata">
 
-</a>
+                <source
+                    src="VID-20260726-WA0002.mp4"
+                    type="video/mp4">
 
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.mindmarathon" target="_blank" class="game-card">
+                Your browser does not support the video tag.
 
-<img src="Mind-Marathon.png" alt="Mind Marathon" class="game-icon">
+            </video>
 
-<div class="game-info">
-<h3>Mind Marathon</h3>
-<p>Brain-training challenges designed to improve memory and focus.</p>
-</div>
+        </div>
 
-</a>
+        <!-- CLOSING MESSAGE -->
 
-<a href="https://play.google.com/store/apps/details?id=com.KiotaGames.SerengetiCircuitMasters" target="_blank" class="game-card">
+        <p class="closing">
+            Kiota Games &mdash; Where Code Becomes Reality.
+        </p>
 
-<img src="SerengetiCircuitIconNew.png" alt="Serengeti Circuit Masters" class="game-icon">
+        <!-- BOOK BUTTON -->
 
-<div class="game-info">
-<h3>Serengeti Circuit Masters</h3>
-<p>Racing competition inspired by speed, skill and precision.</p>
-</div>
+        <div class="book-button-container">
 
-</a>
+            <a
+                href="https://www.amazon.com/dp/B0H4RL7MNG"
+                class="book-button"
+                target="_blank"
+                rel="noopener noreferrer">
 
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.tacticiansdeck" target="_blank" class="game-card">
+                A Life Behind the Code
+                <br>
+                The Journey Didn't Begin with Games
 
-<img src="TacticiansDeckIcon1.png" alt="Tacticians Deck" class="game-icon">
+            </a>
 
-<div class="game-info">
-<h3>Tacticians Deck</h3>
-<p>Card-based strategy game focused on tactical thinking.</p>
-</div>
+        </div>
 
-</a>
-
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.thelonechap" target="_blank" class="game-card">
-
-<img src="The-Lone-Chap.png" alt="The Lone Chap" class="game-icon">
-
-<div class="game-info">
-<h3>The Lone Chap</h3>
-<p>Adventure experience featuring exploration and challenge.</p>
-</div>
-
-</a>
-
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.wordzania" target="_blank" class="game-card">
-
-<img src="WordZaniaNewIcon.png" alt="WordZania" class="game-icon">
-
-<div class="game-info">
-<h3>WordZania</h3>
-<p>Guess the hidden five-letter word in six tries. Learn, think and discover while expanding your vocabulary.</p>
-</div>
-
-</a>
-
-<a href="https://play.google.com/store/apps/details?id=com.KiotaGames.GololiMbiozaZigZag" target="_blank" class="game-card">
-
-<img src="Gololi.png" alt="Gololi: Mbio za ZigZag" class="game-icon">
-
-<div class="game-info">
-<h3>Gololi: Mbio za ZigZag</h3>
-<p>Guide the ball through an endless zigzag path, collect gems and beat your highest score.</p>
-</div>
-
-</a>
-
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.bongoblast" target="_blank" class="game-card">
-
-<img src="BongoBlastIcon1.png" alt="Bongo Blast" class="game-icon">
-
-<div class="game-info">
-<h3>Bongo Blast</h3>
-<p>Launch bouncing balls, break every block and master increasingly challenging levels in this arcade game.</p>
-</div>
-
-</a>
- <a href="https://play.google.com/store/apps/details?id=com.KiotaGames.RogueAsteroids" target="_blank" class="game-card">
-
-<img src="RogueAsteroidsIcon.png" alt="Rogue Asteroids" class="game-icon">
-
-<div class="game-info">
-<h3>Rogue Asteroids</h3>
-<p>Battle through dangerous asteroid fields, destroy incoming threats and survive as long as you can.</p>  
-</div>
-
-</a>
-<a href="https://play.google.com/store/apps/details?id=com.KiotaGames.KivuliOps" target="_blank" class="game-card">
-
-<img src="Kivuli Ops icon (2) (1).png" alt="Kivuli Ops" class="game-icon">
-
-<div class="game-info">
-<h3>Kivuli Ops</h3>
-<p>Online multiplayer first-person shooter featuring intense tactical combat, real-time battles and competitive action against players from around the world.</p>
-</div>
-
-</a>
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.rukaruka" target="_blank" class="game-card">
-
-<img src="RukaRukaIcon.png" alt="RukaRuka" class="game-icon">
-
-<div class="game-info">
-<h3>RukaRuka</h3>
-<p>Jump over endless obstacles, survive as long as possible and beat your highest score.</p>
-</div>
-
-</a>
-
-    <a href="https://play.google.com/store/apps/details?id=com.kiotagames.kifarucombat" target="_blank" class="game-card">
-
-<img src="KifaruCombat.png" alt="Kifaru Combat" class="game-icon">
-
-<div class="game-info">
-<h3>Kifaru Combat</h3>
-<p>Battle against online opponents, eliminate your enemies and be the first to earn 700 coins to claim victory.</p>
-</div>
-
-</a>
-
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.fallinghazzard" target="_blank" class="game-card">
-
-<img src="FallingHazzard.png" alt="Falling Hazard" class="game-icon">
-
-<div class="game-info">
-<h3>Falling Hazard</h3>
-<p>Dodge falling obstacles, survive the endless challenge and beat your highest score.</p>
-</div>
-
-</a>
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.orbixa" target="_blank" class="game-card">
-
-<img src="Orbixa2.png" alt="Orbixa" class="game-icon">
-
-<div class="game-info">
-<h3>Orbixa</h3>
-<p>Tap the moving balls before time runs out, earn points and clear every ball to win.</p>
-</div>
-
-</a>
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.gusaruka" target="_blank" class="game-card">
-
-<img src="GusaRuka.png" alt="GusaRuka" class="game-icon">
-
-<div class="game-info">
-<h3>GusaRuka</h3>
-<p>Tap the screen to make your balls jump and time your movements to avoid obstacles. </p>
-</div>
-
-</a>
-
-<a href="https://play.google.com/store/apps/details?id=com.kiotagames.kulakula" target="_blank" class="game-card">
-
-<img src="KulaKulaIcon.png" alt="KulaKula" class="game-icon">
-
-<div class="game-info">
-<h3>KulaKula</h3>
-<p>Collect delicious foods to increase your score and evade poisonous bottles to avoid dying.</p>
-</div>
-
-</a>
-</div>
+    </div>
 
 </section>
 
-<section class="about">
-
-<h2>About Kiota Games</h2>
-
-<div class="about-box">
-
-<p>
-Kiota Games is an independent game development studio based in Tanzania.
-We create mobile games across multiple genres including action, strategy,
-racing, puzzle, card and multiplayer experiences.
-</p>
-
-<br>
-
-<p>
-Our mission is to build fun, engaging games for players around the world
-while showcasing African creativity and innovation through game development.
-</p>
-
-</div>
-
-</section>
-
-<section class="coming-soon">
-
-<h2>Coming Soon</h2>
-
-
-<p>Zichape</p>
-
-</section>
+<!-- FOOTER -->
 
 <footer>
 
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+    </p>
 
+    <br>
 
-<br>
-
-<p>
-<a href="https://kiotagames.com">Home</a> |
-<a href="privacy-policy.html">Privacy Policy</a> |
-<a href="contact.html">Contact Us</a> |
-<a href="https://play.google.com/store/apps/developer?id=Kiota+Games" target="_blank">Google Play</a>
-</p>
-
-
-<br>
-
-<p>© 2026 Kiota Games. All Rights Reserved.</p>
-
-<br>
-
-<p><em>Where Code Becomes Reality.</em></p>
+    <p>© 2026 Kiota Games. All Rights Reserved.</p>
 
 </footer>
 
 </body>
+
 </html>
