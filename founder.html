@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -85,6 +86,40 @@ body{
     margin-top:35px;
 }
 
+/* Book button */
+.book-button-container{
+    text-align:center;
+    margin-top:25px;
+}
+
+.book-button{
+    display:inline-block;
+    max-width:100%;
+    padding:16px 28px;
+    background:#3d7cff;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    line-height:1.5;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transition:background .3s, transform .3s;
+}
+
+.book-button:hover{
+    background:#5d93ff;
+    transform:translateY(-3px);
+}
+
+.book-button strong{
+    display:block;
+    font-size:1.15rem;
+}
+
+.book-button span{
+    display:block;
+    font-size:.95rem;
+}
+
 footer{
     text-align:center;
     padding:40px 20px;
@@ -126,6 +161,16 @@ footer a:hover{
 .founder-video video{
     width:100%;
     max-width:100%;
+}
+
+.book-button{
+    width:100%;
+    max-width:360px;
+    padding:16px 18px;
+}
+
+.book-button strong{
+    font-size:1.1rem;
 }
 
 }
@@ -175,6 +220,20 @@ It is to build a studio where programmers and artists have the freedom to think,
 Kiota Games &mdash; Where Code Becomes Reality.
 </p>
 
+<div class="book-button-container">
+
+<a
+    href="https://www.amazon.com/dp/B0H4RL7MNG"
+    class="book-button"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <strong>A Life Behind the Code</strong>
+    <span>The Journey Didn't Begin with Games</span>
+</a>
+
+</div>
+
 </div>
 
 </section>
@@ -198,3 +257,4 @@ Kiota Games &mdash; Where Code Becomes Reality.
 </body>
 
 </html>
+```
